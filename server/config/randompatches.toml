@@ -1,4 +1,3 @@
-# RandomPatches configuration
 
 # Options related to the movement speed limits.
 [speedLimits]
@@ -61,24 +60,24 @@
 		# The path to the 256x256 window icon which is used on Mac OS X.
 		# Leave this, the 16x16 icon and the 32x32 icon blank to use the default icon.
 		# Default: 
-		icon256 = "icons/icon_256x256.png"
+		icon256 = ""
 		# The path to the 16x16 Minecraft window icon.
 		# Leave this and the 32x32 icon blank to use the default icon.
 		# Default: 
-		icon16 = "icons/icon_16x16.png"
+		icon16 = ""
 		# The path to the 32x32 Minecraft window icon.
 		# Leave this and the 16x16 icon blank to use the default icon.
 		# Default: 
-		icon32 = "icons/icon_32x32.png"
+		icon32 = ""
 		# The Minecraft window title.
 		# The Minecraft version is provided as an argument.
 		# Default: Minecraft* %s
-		title = "Valhelsia"
+		title = "Minecraft* %s"
 		# The Minecraft window title.
 		# The Minecraft version and current activity are provided as arguments.
 		# For example: "RandomPatches - %2$s"
 		# Default: Minecraft* %s - %s
-		titleWithActivity = "Valhelsia - %2$s"
+		titleWithActivity = "Minecraft* %s - %s"
 
 # Options related to boats.
 [boats]

@@ -1,0 +1,162 @@
+---- Minecraft Crash Report ----
+// Everything's going to plan. No, really, that was supposed to happen.
+
+Time: 7/29/20, 2:32 PM
+Description: Exception in server tick loop
+
+java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter
+	at com.ldtteam.structurize.util.StructureUtils.calculateMD5(StructureUtils.java:48) ~[?:0.13.20-ALPHA] {re:classloading}
+	at com.ldtteam.structurize.util.StructureUtils.calculateMD5(StructureUtils.java:108) ~[?:0.13.20-ALPHA] {re:classloading}
+	at com.ldtteam.structurize.management.Structures.loadSchematicsForPrefix(Structures.java:333) ~[?:0.13.20-ALPHA] {re:classloading,pl:runtimedistcleaner:A}
+	at com.ldtteam.structurize.management.Structures.loadStyleMapsJar(Structures.java:238) ~[?:0.13.20-ALPHA] {re:classloading,pl:runtimedistcleaner:A}
+	at com.ldtteam.structurize.management.Structures.loadStyleMaps(Structures.java:145) ~[?:0.13.20-ALPHA] {re:classloading,pl:runtimedistcleaner:A}
+	at com.ldtteam.structurize.management.Structures.init(Structures.java:122) ~[?:0.13.20-ALPHA] {re:classloading,pl:runtimedistcleaner:A}
+	at com.ldtteam.structurize.event.EventSubscriber.onServerStarted(EventSubscriber.java:48) ~[?:0.13.20-ALPHA] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_243_EventSubscriber_onServerStarted_FMLServerStartedEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:80) ~[eventbus-2.2.0-service.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-2.2.0-service.jar:?] {}
+	at net.minecraftforge.fml.server.ServerLifecycleHooks.handleServerStarted(ServerLifecycleHooks.java:109) ~[?:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:623) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.lambda$func_240784_a_$0(MinecraftServer.java:230) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at java.lang.Thread.run(Thread.java:834) [?:?] {}
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
+	at java.lang.ClassLoader.findClass(ClassLoader.java:719) ~[?:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:589) ~[?:?] {}
+	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:92) ~[modlauncher-5.1.0.jar:?] {re:classloading}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[?:?] {}
+	... 14 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.1
+	Minecraft Version ID: 1.16.1
+	Operating System: Linux (amd64) version 4.19.0-9-cloud-amd64
+	Java Version: 11.0.8, Debian
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Debian
+	Memory: 3595489280 bytes (3428 MB) / 4294967296 bytes (4096 MB) up to 4294967296 bytes (4096 MB)
+	CPUs: 2
+	JVM Flags: 11 total; -Xms4G -Xmx4G -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=100 -XX:+DisableExplicitGC -XX:TargetSurvivorRatio=90 -XX:G1NewSizePercent=50 -XX:G1MaxNewSizePercent=80 -XX:G1MixedGCLiveThresholdPercent=50 -XX:+AlwaysPreTouch
+	ModLauncher: 5.1.0+69+master.79f13f7
+	ModLauncher launch target: fmlserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/eventbus-2.2.0-service.jar eventbus PLUGINSERVICE 
+		/forge-1.16.1-32.0.70.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.1-32.0.70.jar runtime_enum_extender PLUGINSERVICE 
+		/forge-1.16.1-32.0.70.jar capability_inject_definalize PLUGINSERVICE 
+		/accesstransformers-2.1.3-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.1-32.0.70.jar runtimedistcleaner PLUGINSERVICE 
+		/forge-1.16.1-32.0.70.jar fml TRANSFORMATIONSERVICE 
+		/MixinBootstrap-1.0.3.jar mixinbootstrap TRANSFORMATIONSERVICE 
+		/MixinBootstrap-1.0.3.jar mixin PLUGINSERVICE 
+		/MixinBootstrap-1.0.3.jar mixinbootstrap PLUGINSERVICE 
+	FML: 32.0
+	Forge: net.minecraftforge:32.0.70
+	FML Language Providers: 
+		javafml@32.0
+		minecraft@1
+	Mod List: 
+		QuarkOddities-1.15.2.jar Quark Oddities {quarkoddities@1.15.2 DONE}
+		ClientTweaks_1.16.1-5.0.0.jar Client Tweaks {clienttweaks@5.0.0 DONE}
+		TrashSlot_1.16.1-12.0.1.jar TrashSlot {trashslot@12.0.1 DONE}
+		torchslabmod-1.16.1_v1.6.16.jar Torch Slab Mod {torchslabmod@1.6.16 DONE}
+		NetherPortalFix_1.16.1-7.0.0.jar NetherPortalFix {netherportalfix@7.0.0 DONE}
+		mining-helmet-1.16.1-1.0.8.jar Mining Helmet {mining_helmet@1.0.8 DONE}
+		OldJavaWarning-1.16.1-4.0.1.jar OldJavaWarning {oldjavawarning@4.0.1 DONE}
+		curiousshulkerboxes-FORGE-1.16.1-3.0.jar Curious Shulker Boxes {curiousshulkerboxes@FORGE-1.16.1-3.0 DONE}
+		jei-1.16.1-7.0.0.6.jar Just Enough Items {jei@7.0.0.6 DONE}
+		the-conjurer-1.16.1-1.0.6.jar The Conjurer {conjurer_illager@1.0.6 DONE}
+		Abnormals-Core-1.16.1-v2.0.0.jar Abnormals Core {abnormals_core@2.0.0 DONE}
+		Buzzier-Bees-1.16.1-2.0.0.jar Buzzier Bees {buzzier_bees@2.0.0 DONE}
+		Mekanism-1.16.1-10.0.3.426.jar Mekanism {mekanism@10.0.3 DONE}
+		caelus-FORGE-1.16.1-2.0-beta5.jar Caelus API {caelus@FORGE-1.16.1-2.0-beta5 DONE}
+		pitg-1.16.1-1.3.0.jar Pane In The Glass {pitg@1.16.1-1.3.0 DONE}
+		Extra-Boats-1.16.1-1.4.0.jar Extra Boats {extraboats@1.4.0 DONE}
+		Waystones_1.16.1-7.0.2.jar Waystones {waystones@7.0.2 DONE}
+		Clumps-6.0.0.3.jar Clumps {clumps@6.0.0.3 DONE}
+		BetterTitleScreen-1.16.1-1.10.0.jar Better Title Screen {bettertitlescreen@1.16.1-1.10.0 DONE}
+		XaerosWorldMap_1.7.4_Forge_1.16.1.jar Xaero's World Map {xaeroworldmap@1.7.4 DONE}
+		light-overlay-5.4.1.jar Light Overlay Forge {lightoverlay-forge@NONE DONE}
+		CookingForBlockheads_1.16.1-9.0.0.jar Cooking for Blockheads {cookingforblockheads@9.0.0 DONE}
+		Placebo-1.16.1-4.0.1.jar Placebo {placebo@4.0.1 DONE}
+		comforts-FORGE-1.16.1-3.0.jar Comforts {comforts@FORGE-1.16.1-3.0 DONE}
+		NaturesCompass-1.16.1-1.8.5.jar Nature's Compass {naturescompass@1.16.1-1.8.5 DONE}
+		decorative_blocks-7a.jar Decorative Blocks {decorative_blocks@7a DONE}
+		curioofundying-FORGE-1.16.1-4.0.jar Curio of Undying {curioofundying@FORGE-1.16.1-4.0 DONE}
+		Bamboo-Blocks-1.16.1-2.0.0.jar Bamboo Blocks {bamboo_blocks@NONE DONE}
+		snowundertrees-1.16.1-v1.1.1.jar Snow Under Trees {snowundertrees@v1.1.1 DONE}
+		randompatches-1.16.1-1.22.0.0.jar RandomPatches {randompatches@1.16.1-1.22.0.0 DONE}
+		mcw-doors-1.0.0-mc1.16.1.jar Macaw's Doors {mcwdoors@1.0.0 DONE}
+		bedspreads-FORGE-1.16.1-4.0.jar Bedspreads {bedspreads@FORGE-1.16.1-4.0 DONE}
+		MekanismGenerators-1.16.1-10.0.3.426.jar Mekanism: Generators {mekanismgenerators@10.0.3 DONE}
+		ToastControl-1.16.1-4.0.0.jar Toast Control {toastcontrol@4.0.0 DONE}
+		SnowRealMagic-1.16.1-2.0.0.jar Snow! Real Magic! {snowrealmagic@2.0.0 DONE}
+		Kiwi-1.16.1-3.1.3.jar Kiwi {kiwi@3.1.3 DONE}
+		JEITweaker-1.16.1-1.0.1.2.jar JEI Tweaker {jeitweaker@1.0.1.2 DONE}
+		JustEnoughResources-1.16.1-0.11.0.79.jar Just Enough Resources {jeresources@0.11.0.79 DONE}
+		CraftTweaker-1.16.1-7.0.0.13.jar CraftTweaker {crafttweaker@7.0.0.13 DONE}
+		forge-1.16.1-32.0.70-universal.jar Forge {forge@32.0.70 DONE}
+		Waddles-1.16.1-0.8.7.jar Waddles {waddles@1.16.1-0.8.7 DONE}
+		Bones-1.16.1-1.3.2.jar Bones {bones@1.16.1-1.3.2 DONE}
+		absentbydesign-1.16.1-1.1.0.jar Absent By Design Mod {absentbydesign@1.16.1-1.1.0 DONE}
+		refinedstorage-1.9.2.jar Refined Storage {refinedstorage@1.9.2 DONE}
+		JEIEnchantmentInfo-1.16.1-1.1.0.jar JEI Enchantment Info {jeienchantmentinfo@1.16.1-1.0.0 DONE}
+		dash-1.16.1-1.0.1.jar Dash {dash@1.0.1 DONE}
+		structure-gel-api-1.16.1-1.1.1.jar Structure Gel API {structure_gel@1.1.1 DONE}
+		ironchest-1.16.1-11.0.1.jar Iron Chests {ironchest@1.16.1-11.0.1 DONE}
+		PackMenu-1.16.1-2.0.0.jar Pack Menu {packmenu@2.0.0 DONE}
+		CraftingTweaks_1.16.1-12.0.4.jar Crafting Tweaks {craftingtweaks@12.0.4 DONE}
+		forge-1.16.1-32.0.70-server.jar Minecraft {minecraft@1.16.1 DONE}
+		The-Endergetic-Expansion-1.16.1-2.0.0.jar The Endergetic Expansion {endergetic@2.0.0 DONE}
+		industrial-foregoing-1.16.1-3.0.3-5935836.jar Industrial Foregoing {industrialforegoing@3.0.3 DONE}
+		MouseTweaks-2.13-mc1.16.1.jar Mouse Tweaks {mousetweaks@2.13 DONE}
+		titanium-1.16.1-3.0.2.jar Titanium {titanium@3.0.2 DONE}
+		ImmersiveEngineering-0.16-109.jar Immersive Engineering {immersiveengineering@0.16-109 DONE}
+		BiomesOPlenty-1.16.1-11.0.0.390-universal.jar Biomes O' Plenty {biomesoplenty@1.16.1-11.0.0.390 DONE}
+		MekanismAdditions-1.16.1-10.0.3.426.jar Mekanism: Additions {mekanismadditions@10.0.3 DONE}
+		valhelsia_structures-16.0.1.jar Valhelsia Structures {valhelsia_structures@16.0.1 DONE}
+		forbidden_arcanus-1.16.1-1.0-beta-2.jar Forbidden & Arcanus {forbidden_arcanus@1.16.1-1.0-beta DONE}
+		curios-FORGE-1.16.1-3.0.jar Curios API {curios@FORGE-1.16.1-3.0 DONE}
+		Savage-and-Ravage-1.16.1-2.0.0.jar Savage & Ravage {savageandravage@2.0.0 DONE}
+		Xaeros_Minimap_20.17.0_Forge_1.16.1.jar Xaero's Minimap {xaerominimap@20.17.0 DONE}
+		leap-1.16.1-1.0.1.jar Leap {leap@1.0.1 DONE}
+		pamhc2foodcore-1.16.1-1.0.3.jar Pam's HarvestCraft 2 Food Core {pamhc2foodcore@version DONE}
+		serverconfigupdater-1.2.jar ServerConfig Updater {serverconfigupdater@1.2 DONE}
+		FastWorkbench-1.16.1-4.1.1.jar FastWorkbench {fastbench@4.1.1 DONE}
+		polymorph-FORGE-1.16.1-0.11.jar Polymorph {polymorph@FORGE-1.16.1-0.11 DONE}
+		AutoRegLib-1.6-42.jar AutoRegLib {autoreglib@1.6-42 DONE}
+		Quark-r2.2-255.jar Quark {quark@r2.2-255 DONE}
+		Enhanced-Mushrooms-1.16.1-v2.0.3.jar Enhanced Mushrooms {enhanced_mushrooms@2.0.0 DONE}
+		StorageDrawers-1.16.1-8.0.0.jar Storage Drawers {storagedrawers@1.16.1-8.0.0 DONE}
+		DoubleSlabs-1.16-3.2.0.jar Double Slabs {doubleslabs@3.2.0 DONE}
+		InventoryHud_1.16.1.forge-3.0.1.jar Inventory HUD+(Forge edition) {inventoryhud@3.0.1 DONE}
+		structurize-0.13.20-ALPHA.jar Structurize {structurize@0.13.20-ALPHA DONE}
+		MekanismTools-1.16.1-10.0.3.426.jar Mekanism: Tools {mekanismtools@10.0.3 DONE}
+		FastFurnace-1.16.1-4.0.0.jar FastFurnace {fastfurnace@4.0.0 DONE}
+		AppleSkin-mc1.16.1-forge-1.0.14.jar AppleSkin {appleskin@1.0.14 DONE}
+		engineersdecor-1.16.1-1.1.1-b3.jar Engineer's Decor {engineersdecor@1.1.1-b3 DONE}
+		curiouselytra-FORGE-1.16.1-3.0.jar Curious Elytra {curiouselytra@FORGE-1.16.1-3.0 DONE}
+		AI-Improvements-1.16.1-0.3.0.jar AI-Improvements {aiimprovements@0.3.0 DONE}
+		cloth-config-forge-4.0.2.jar Cloth Config v4 API {cloth-config@4.0 DONE}
+		BetterBurning-1.16.1-2.0.2.jar BetterBurning {betterburning@2.0.2 DONE}
+		refinedstorageaddons-0.7.jar Refined Storage Addons {refinedstorageaddons@0.7 DONE}
+		Incubation-1.16.1-1.1.0.jar Incubation {incubation@1.1.0 DONE}
+		FastLeafDecay-v23.jar FastLeafDecay {fastleafdecay@v23 DONE}
+		CosmeticArmorReworked-1.16.1-v1a.jar CosmeticArmorReworked {cosmeticarmorreworked@1.16.1-v1a DONE}
+		ServerTabInfo-1.16.1-1.2.7-alpha.jar Server Tab Info {servertabinfo@1.2.7-alpha DONE}
+		BetterMineshaftsForge-1.16.1-1.3.jar YUNG's Better Mineshafts {bettermineshafts@1.16.1-1.3 DONE}
+		step-1.16.1-1.0.2.jar Step {step@1.0.2 DONE}
+		DefaultOptions_1.16.1-12.0.1.jar Default Options {defaultoptions@12.0.1 DONE}
+		BetterAdvancements-1.16.1-0.1.0.100.jar Better Advancements {betteradvancements@0.1.0.100 DONE}
+	Kiwi Modules: 
+		kiwi:contributors
+		kiwi:data
+		snowrealmagic:core
+	Player Count: 0 / 20; []
+	Data Packs: vanilla, mod:forge (incompatible), mod:fastleafdecay, mod:appleskin, mod:abnormals_core, mod:absentbydesign (incompatible), mod:aiimprovements (incompatible), mod:autoreglib (incompatible), mod:bamboo_blocks (incompatible), mod:bedspreads (incompatible), mod:betteradvancements (incompatible), mod:betterburning (incompatible), mod:bettermineshafts, mod:bettertitlescreen, mod:biomesoplenty, mod:bones (incompatible), mod:buzzier_bees, mod:caelus (incompatible), mod:clienttweaks (incompatible), mod:cloth-config, mod:clumps (incompatible), mod:comforts (incompatible), mod:conjurer_illager, mod:cookingforblockheads (incompatible), mod:cosmeticarmorreworked (incompatible), mod:craftingtweaks (incompatible), mod:crafttweaker, mod:curioofundying (incompatible), mod:curios (incompatible), mod:curiouselytra (incompatible), mod:curiousshulkerboxes (incompatible), mod:dash (incompatible), mod:decorative_blocks, mod:defaultoptions (incompatible), mod:doubleslabs, mod:endergetic (incompatible), mod:engineersdecor, mod:enhanced_mushrooms, mod:extraboats, mod:fastbench (incompatible), mod:fastfurnace (incompatible), mod:forbidden_arcanus, mod:immersiveengineering (incompatible), mod:incubation, mod:industrialforegoing (incompatible), mod:inventoryhud, mod:ironchest, mod:jei (incompatible), mod:jeienchantmentinfo, mod:jeitweaker, mod:jeresources (incompatible), mod:kiwi, mod:leap (incompatible), mod:lightoverlay-forge (incompatible), mod:mcwdoors, mod:mekanism, mod:mekanismadditions, mod:mekanismgenerators, mod:mekanismtools, mod:mining_helmet (incompatible), mod:mousetweaks (incompatible), mod:naturescompass (incompatible), mod:netherportalfix (incompatible), mod:oldjavawarning (incompatible), mod:packmenu (incompatible), mod:pamhc2foodcore (incompatible), mod:pitg, mod:placebo (incompatible), mod:polymorph, mod:quark, mod:quarkoddities, mod:randompatches (incompatible), mod:refinedstorage, mod:refinedstorageaddons, mod:savageandravage, mod:serverconfigupdater, mod:servertabinfo, mod:snowrealmagic, mod:snowundertrees, mod:step (incompatible), mod:storagedrawers (incompatible), mod:structure_gel, mod:structurize (incompatible), mod:titanium (incompatible), mod:toastcontrol (incompatible), mod:torchslabmod, mod:trashslot (incompatible), mod:valhelsia_structures (incompatible), mod:waddles (incompatible), mod:waystones (incompatible), mod:xaerominimap, mod:xaeroworldmap
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)

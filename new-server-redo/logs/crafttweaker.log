@@ -1,20 +1,20 @@
-[08:53:05.025][CONSTRUCT][CLIENT][ERROR] BEP recipemanager has a validator but no BEP method
-[08:53:18.741][COMMON_SETUP][CLIENT][INFO] Started loading Scripts for Loader 'setupCommon'!
-[08:53:19.721][COMMON_SETUP][CLIENT][INFO] Finished loading Scripts!
-[08:53:33.739][DONE][CLIENT][INFO] Started loading Scripts for Loader 'crafttweaker'!
-[08:53:33.803][DONE][CLIENT][INFO] Loading file: recipe_disabled.zs
-[08:53:33.805][DONE][CLIENT][INFO] Loading file: recipe_added.zs
-[08:53:33.829][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "minecraft:chain"
-[08:53:33.829][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "decorative_blocks:chain"
-[08:53:33.830][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "industrialforegoing:infinity_drill"
-[08:53:33.830][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/storage_copper_to_ingot_copper"
-[08:53:33.830][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/ingot_copper_to_nugget_copper"
-[08:53:33.830][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/nugget_copper_to_ingot_copper"
-[08:53:33.830][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/storage_uranium_to_ingot_uranium"
-[08:53:33.830][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/ingot_uranium_to_nugget_uranium"
-[08:53:33.830][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/nugget_uranium_to_ingot_uranium"
-[08:53:33.830][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/storage_lead_to_ingot_lead"
-[08:53:33.830][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/ingot_lead_to_nugget_lead"
-[08:53:33.830][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/nugget_lead_to_ingot_lead"
-[08:53:33.840][DONE][CLIENT][INFO] Adding "minecraft:crafting" recipe, of type: "shaped", with name: "crafttweaker:big_chain" that outputs: <item:decorative_blocks:chain> * 2
-[08:53:33.840][DONE][CLIENT][INFO] Finished loading Scripts!
+[15:06:25.563][CONSTRUCT][CLIENT][ERROR] BEP recipemanager has a validator but no BEP method
+[15:07:24.300][COMMON_SETUP][CLIENT][INFO] Started loading Scripts for Loader 'setupCommon'!
+[15:07:28.150][COMMON_SETUP][CLIENT][INFO] Finished loading Scripts!
+[15:08:37.701][DONE][CLIENT][INFO] Started loading Scripts for Loader 'crafttweaker'!
+[15:08:37.961][DONE][CLIENT][INFO] Loading file: recipe_disabled.zs
+[15:08:37.967][DONE][CLIENT][INFO] Loading file: recipe_added.zs
+[15:08:38.065][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "minecraft:chain"
+[15:08:38.066][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "decorative_blocks:chain"
+[15:08:38.066][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "industrialforegoing:infinity_drill"
+[15:08:38.067][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/storage_copper_to_ingot_copper"
+[15:08:38.067][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/ingot_copper_to_nugget_copper"
+[15:08:38.067][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/nugget_copper_to_ingot_copper"
+[15:08:38.068][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/storage_uranium_to_ingot_uranium"
+[15:08:38.068][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/ingot_uranium_to_nugget_uranium"
+[15:08:38.069][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/nugget_uranium_to_ingot_uranium"
+[15:08:38.069][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/storage_lead_to_ingot_lead"
+[15:08:38.070][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/ingot_lead_to_nugget_lead"
+[15:08:38.070][DONE][CLIENT][INFO] Removing "minecraft:crafting" recipe with name: "immersiveengineering:crafting/nugget_lead_to_ingot_lead"
+[15:08:38.097][DONE][CLIENT][INFO] Adding "minecraft:crafting" recipe, of type: "shaped", with name: "crafttweaker:big_chain" that outputs: <item:decorative_blocks:chain> * 2
+[15:08:38.097][DONE][CLIENT][INFO] Finished loading Scripts!
