@@ -101,6 +101,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/crimson_hyphae": {
+    "criteria": {
+      "has_log": "2020-07-31 14:42:10 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/spruce_fence_gate": {
     "criteria": {
       "has_planks": "2020-07-26 02:11:56 +0000"
@@ -257,6 +263,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/redstone_lamp": {
+    "criteria": {
+      "has_glowstone": "2020-07-31 13:58:58 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting": {
     "criteria": {
       "has_mossy_cobblestone": "2020-07-27 03:43:37 +0000"
@@ -320,6 +332,12 @@
   "minecraft:recipes/transportation/detector_rail": {
     "criteria": {
       "has_rail": "2020-07-26 13:24:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_rabbit_from_smoking": {
+    "criteria": {
+      "has_rabbit": "2020-07-31 16:26:07 +0000"
     },
     "done": true
   },
@@ -623,6 +641,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_rabbit_from_campfire_cooking": {
+    "criteria": {
+      "has_rabbit": "2020-07-31 16:26:07 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cobblestone_slab_from_cobblestone_stonecutting": {
     "criteria": {
       "has_cobblestone": "2020-07-26 06:38:05 +0000"
@@ -764,6 +788,8 @@
       "minecraft:phantom": "2020-07-27 04:28:13 +0000",
       "minecraft:husk": "2020-07-27 03:33:53 +0000",
       "minecraft:cave_spider": "2020-07-26 13:49:46 +0000",
+      "minecraft:enderman": "2020-08-01 01:33:55 +0000",
+      "minecraft:endermite": "2020-08-01 01:38:43 +0000",
       "minecraft:zombie": "2020-07-26 08:01:11 +0000",
       "minecraft:zombie_villager": "2020-07-30 04:49:56 +0000"
     },
@@ -1666,6 +1692,13 @@
     },
     "done": true
   },
+  "minecraft:nether/explore_nether": {
+    "criteria": {
+      "minecraft:nether_wastes": "2020-07-31 01:08:55 +0000",
+      "minecraft:basalt_deltas": "2020-07-31 01:09:32 +0000"
+    },
+    "done": false
+  },
   "minecraft:recipes/decorations/sandstone_wall": {
     "criteria": {
       "has_sandstone": "2020-07-26 02:29:18 +0000"
@@ -1837,6 +1870,12 @@
   "minecraft:recipes/building_blocks/cut_sandstone_from_sandstone_stonecutting": {
     "criteria": {
       "has_sandstone": "2020-07-26 02:29:18 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/root": {
+    "criteria": {
+      "entered_nether": "2020-07-31 01:08:54 +0000"
     },
     "done": true
   },
@@ -2540,6 +2579,12 @@
     },
     "done": true
   },
+  "minecraft:story/enter_the_nether": {
+    "criteria": {
+      "entered_nether": "2020-07-31 01:08:54 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/green_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2020-07-28 01:34:39 +0000"
@@ -2996,6 +3041,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/crimson_planks": {
+    "criteria": {
+      "has_logs": "2020-07-31 14:42:10 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/golden_helmet": {
     "criteria": {
       "has_gold_ingot": "2020-07-26 02:30:15 +0000"
@@ -3071,6 +3122,12 @@
   "minecraft:story/form_obsidian": {
     "criteria": {
       "obsidian": "2020-07-26 11:31:30 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_rabbit": {
+    "criteria": {
+      "has_rabbit": "2020-07-31 16:26:07 +0000"
     },
     "done": true
   },
@@ -3200,6 +3257,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/shoot_arrow": {
+    "criteria": {
+      "shot_arrow": "2020-08-01 01:31:30 +0000"
+    },
+    "done": true
+  },
   "immersiveengineering:recipes/immersiveengineering/crafting/powerpack": {
     "criteria": {
       "has_leather": "2020-07-26 06:11:37 +0000"
@@ -3298,7 +3361,8 @@
   },
   "minecraft:husbandry/complete_catalogue": {
     "criteria": {
-      "textures/entity/cat/jellie.png": "2020-07-26 02:48:15 +0000"
+      "textures/entity/cat/jellie.png": "2020-07-26 02:48:15 +0000",
+      "textures/entity/cat/red.png": "2020-08-01 01:44:03 +0000"
     },
     "done": false
   },
